@@ -1,0 +1,22 @@
+# Ruby/Rails Specific
+.bundle/
+/vendor/bundle/
+/tmp/
+/log/
+*.log
+*.pid
+.byebug_history
+.DS_Store
+.env
+config/database.yml
+config/master.key
+db/*.sqlite3
+db/*.sqlite3-journal
+public/assets
+public/packs
+public/uploads
+storage/*
+!storage/.keep
+# For Rails 6+ webpacker
+public/packs-test/
+node_modules/ # React's node_modules, but also used by Rails webpacker
