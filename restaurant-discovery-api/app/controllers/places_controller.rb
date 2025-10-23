@@ -7,7 +7,7 @@ class PlacesController < ApplicationController
   def search
     search_base_url = Rails.configuration.places_base_url + '/textsearch/json'
     photo_base_url = Rails.configuration.places_base_url + '/photo'
-    api_key = Rails.configuration.google_places_api_key
+    api_key = ENV['GOOGLE_API_KEY']
 
     query_params = {
       query: params[:query],
