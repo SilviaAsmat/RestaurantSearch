@@ -1,0 +1,4 @@
+test_user:
+  name: FakeName
+  email: testemail@gmail.com
+  password: my_passsword
