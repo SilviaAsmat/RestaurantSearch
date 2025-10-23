@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
+  get "homepage/index"
+  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
   post "/register", to: "users#create"
 
   post "/login", to:"users#login"
@@ -12,5 +15,7 @@ Rails.application.routes.draw do
   post "/search", to:"places#search"
   
   get '/api', to: proc { [200, { 'Content-Type' => 'application/json' }, [{ message: 'OK from Rails!' }.to_json]] } 
+  
+  # root "homepage#index" 
 
 end
