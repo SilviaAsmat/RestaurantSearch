@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "https://restaurantsearch.onrender.com"
+    origins "*" # TODO: Replace * with clients correct url
 
     resource "*",
       headers: :any,
