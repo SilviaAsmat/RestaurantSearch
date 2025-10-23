@@ -7,9 +7,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "http://localhost:3002"
+    origins "https://whatsforlunch-rj9z.onrender.com/"
 
-    resource "*",
+    resource "https://whatsforlunch-rj9z.onrender.com/",
       headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
